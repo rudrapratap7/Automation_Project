@@ -31,7 +31,7 @@ echo -e 'Log Type\t-\tTime Created\t-\tType\t-\tSize' > ${docroot}/inventory.htm
 fi
 
 if [[ -f ${docroot}/inventory.html ]]; then
-size=$(du -h /tmp/${name}-httpd-logs-${timestamp}.tar | awk '{print $1}')
+size=$(du -h /tmp/${abhishek}-httpd-logs-${timestamp}.tar | awk '{print $1}')
 echo -e "httpd-logs\t-\t${timestamp}\t-\ttar\t-\t${size}" >> ${docroot}/inventory.html
 fi
 
